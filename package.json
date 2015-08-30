@@ -1,0 +1,19 @@
+{
+  "name": "alt-redux-example-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "entry.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnandreu/alt-redux-example-app.git"
+  },
+  "author": "Carlos Andreu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cnandreu/alt-redux-example-app/issues"
+  },
+  "homepage": "https://github.com/cnandreu/alt-redux-example-app#readme"
+}
