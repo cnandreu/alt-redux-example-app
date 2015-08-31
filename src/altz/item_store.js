@@ -2,6 +2,7 @@
 import alt from 'altz/alt_instance'
 import ItemActions from 'altz/item_actions'
 import { Record, List } from 'immutable'
+import makeHot from 'alt/utils/makeHot'
 
 var Item = Record({
   id: null,
@@ -26,4 +27,7 @@ class ItemStore {
 
 }
 
-export default alt.createStore(ItemStore, 'ItemStore')
+ItemStore.displayName = 'ItemStore'
+
+export default makeHot(alt, ItemStore, 'ItemStore')
+// export default alt.createStore(ItemStore, 'ItemStore')
