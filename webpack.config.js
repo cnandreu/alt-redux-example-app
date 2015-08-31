@@ -3,6 +3,7 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
+  devtool: 'source-map',
   entry: [
     'webpack-dev-server/client?http://0.0.0.0:3000',
     'webpack/hot/only-dev-server',
@@ -10,7 +11,8 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'build'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/static/'
   },
   resolve: {
     root: path.join(__dirname, 'src'),

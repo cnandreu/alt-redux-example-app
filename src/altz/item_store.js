@@ -29,5 +29,5 @@ class ItemStore {
 
 ItemStore.displayName = 'ItemStore'
 
-export default makeHot(alt, ItemStore, 'ItemStore')
+export default makeHot(alt, ItemStore)
 // export default alt.createStore(ItemStore, 'ItemStore')
