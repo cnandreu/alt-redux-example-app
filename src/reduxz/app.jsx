@@ -45,7 +45,7 @@ App.propTypes = {
 
 App.defaultProps = {
   items: List(),
-  addItem: function () {}
+  addItem () {}
 }
 
 export default App

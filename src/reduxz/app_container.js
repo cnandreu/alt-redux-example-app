@@ -1,5 +1,4 @@
 
-import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import App from 'reduxz/app'
 import * as ItemActions from 'reduxz/item_actions'
@@ -10,8 +9,4 @@ function mapStateToProps (state) {
   }
 }
 
-function mapDispatchToProps (dispatch) {
-  return bindActionCreators(ItemActions, dispatch)
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect(mapStateToProps, ItemActions)(App)
