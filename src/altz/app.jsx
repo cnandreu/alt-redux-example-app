@@ -1,14 +1,14 @@
 
-import React from 'react'
+import React, { Component, PropTypes } from 'react'
 import ItemActions from 'altz/item_actions'
 import ImmutableRenderMixin from 'react-immutable-render-mixin'
+import { List } from 'immutable'
 
-class App extends React.Component {
+class App extends Component {
 
   constructor (props) {
-
     super(props)
-    this.shouldComponentUpdate = ImmutableRenderMixin.shouldComponentUpdate.bind(this)
+    this.shouldComponentUpdate = ImmutableRenderMixin.shouldComponentUpdate
   }
 
   onAddItem () {
@@ -41,11 +41,11 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-  items: React.PropTypes.array
+  items: PropTypes.object
 }
 
 App.defaultProps = {
-  items: []
+  items: List()
 }
 
 export default App

@@ -1,8 +1,14 @@
 
 import React from 'react'
-import AppContainer from 'altz/app_container'
+import AltAppContainer from 'altz/app_container'
+import ReduxAppRoot from 'reduxz/app_root'
 
 React.render(
-  <AppContainer/>,
+  <AltAppContainer/>,
   document.getElementById('alt-container')
+)
+
+React.render(
+  <ReduxAppRoot />,
+  document.getElementById('redux-container')
 )
